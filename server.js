@@ -9,6 +9,7 @@ app.use(express.json());
 const PORT = process.env.PORT || 8000;
 
 import leitura from './controllers/leitura.js';
+import sensor from './controllers/sensor.js';
 
 sequelize.authenticate()
 	.then(() => {
@@ -28,5 +29,7 @@ app.get('/', (req, res) => {
 
 app.post('/leitura', leitura.inserir);
 app.get('/leitura', leitura.listar);
+
+app.get('/sensor', sensor.listar);
 
 app.listen(PORT, () => console.log(`Servidor rodando na porta ${PORT}`));
