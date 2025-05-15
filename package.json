@@ -1,6 +1,6 @@
 {
   "name": "sharkiot-back",
-  "type":"module",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -17,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/GuiSmith/sharkiot-back/issues"
   },
-  "homepage": "https://github.com/GuiSmith/sharkiot-back#readme"
+  "homepage": "https://github.com/GuiSmith/sharkiot-back#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "pg": "^8.16.0",
+    "sequelize": "^6.37.7"
+  }
 }

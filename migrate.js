@@ -8,8 +8,8 @@ await sequelize.sync({ alter: true })
 		console.log('Tabelas criadas com sucesso');
 		try {
 			const sensores = [
-				{ id: 1, tipo: 'IR' },
-				{ id: 2, tipo: 'Distancia' }
+				{ id: 1, tipo: 'Presença' },
+				{ id: 2, tipo: 'Distância' }
 			];
 
 			for(const sensor of sensores){

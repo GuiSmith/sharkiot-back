@@ -1,9 +1,12 @@
 // Bibliotecas
 import express from "express";
 import sequelize from './banco.js';
+import cors from 'cors';
+
+import midCors from "./middlewares/cors.js";
 
 const app = express();
-
+app.use(cors(midCors.corsOptions));
 app.use(express.json());
 
 const PORT = process.env.PORT || 8000;
