@@ -3,7 +3,7 @@ import sequelize from './banco.js';
 import Leitura from './models/Leitura.js';
 import Sensor from './models/Sensor.js';
 
-await sequelize.sync({ alter: true })
+await sequelize.sync({ force: true })
 	.then(async () => {
 		console.log('Tabelas criadas com sucesso');
 		try {

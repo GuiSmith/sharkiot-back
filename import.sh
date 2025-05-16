@@ -1,6 +1,6 @@
 #!/bin/bash
 
-curl -X POST http://localhost:8000/leitura -H "Content-Type: application/json" -d '{"valor": 1, "id_sensor": 1, "data_ocorrencia": "2025-05-15T10:00:00"}'
+curl -X POST https://sharkiot-8e1db8716c84.herokuapp.com//leitura -H "Content-Type: application/json" -d '{"valor": 1, "id_sensor": 1, "data_ocorrencia": "2025-05-15T10:00:00"}'
 curl -X POST http://localhost:8000/leitura -H "Content-Type: application/json" -d '{"valor": 0, "id_sensor": 1, "data_ocorrencia": "2025-05-15T10:01:00"}'
 curl -X POST http://localhost:8000/leitura -H "Content-Type: application/json" -d '{"valor": 1, "id_sensor": 1, "data_ocorrencia": "2025-05-15T10:02:00"}'
 curl -X POST http://localhost:8000/leitura -H "Content-Type: application/json" -d '{"valor": 0, "id_sensor": 1, "data_ocorrencia": "2025-05-15T10:03:00"}'
